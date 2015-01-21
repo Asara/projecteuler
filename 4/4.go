@@ -4,13 +4,17 @@ import "fmt"
 
 func main() {
     largest_palindrome := 0
-    for i := 100; i <= 999; i++ {
-        for j := 100; i <= 999; j++ {
+    i := 999
+    for i >= 100 {
+        j := 999
+        for j >= i {
             test := i * j
             if is_palindrome(test) && test > largest_palindrome {
                 largest_palindrome = test
             }
+            j--
         }
+        i--
     }
     fmt.Println(largest_palindrome)
 }
