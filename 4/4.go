@@ -3,10 +3,16 @@ package main
 import "fmt"
 
 func main() {
-    if (is_palindrome(9009)) {
-        fmt.Println("Yes")
+    largest_palindrome := 0
+    for i := 100; i <= 999; i++ {
+        for j := 100; i <= 999; j++ {
+            test := i * j
+            if is_palindrome(test) && test > largest_palindrome {
+                largest_palindrome = test
+            }
+        }
     }
-
+    fmt.Println(largest_palindrome)
 }
 
 func reverse(n int) int{
