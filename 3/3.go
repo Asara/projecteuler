@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	search := 600851475143
@@ -15,5 +13,5 @@ func main() {
 			f = f + 1
 		}
 	}
-    fmt.Printf("%s\n", search)
+    fmt.Println(search)
 }

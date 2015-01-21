@@ -1,9 +1,6 @@
 package main
 
-import (
-    "fmt"
-    "strconv"
-)
+import "fmt"
 
 
 func main() {
@@ -19,6 +16,5 @@ func main() {
         x = y
         y = z
     }
-    total := strconv.Itoa(sum)
-    fmt.Printf("%s\n", total)
+    fmt.Println(sum)
 }
